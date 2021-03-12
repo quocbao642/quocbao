@@ -6,6 +6,7 @@ function App(){
   const [count,setCount] = useState(0);
   const [image,setImage] = useState('');
   const ClickPev = () =>{
+    if(count-1<0)alert ('LỖI : ID KHÔNG HỢP LỆ');
     let url = `https://picsum.photos/id/${count-1}/960/640`;
     console.log(url);
     setCount(count - 1);
